@@ -131,7 +131,7 @@ button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visib
 .status-dot { display: inline-block; width: 6px; height: 6px; border-radius: 50%; background: var(--sea-glass); box-shadow: 0 0 0 3px rgba(45, 130, 116, 0.12); }
 .button { display: inline-flex; align-items: center; justify-content: center; gap: 9px; border: 0; border-radius: 999px; padding: 13px 19px; font-size: 10px; font-weight: 800; letter-spacing: 0.04em; line-height: 1; transition: transform 160ms var(--ease-out), background 180ms var(--ease-out), box-shadow 180ms var(--ease-out); }
 .button:hover { transform: translateY(-2px); box-shadow: 0 10px 20px rgba(22, 35, 52, 0.11); }
-.button:active { transform: scale(0.97); }
+.button:active { transform: scale(0.95); opacity: 0.85; }
 .button-small { padding: 12px 15px; font-size: 9px; }
 .button-dark { color: var(--bone); background: var(--ink); }
 .button-dark:hover { background: var(--sea-glass-deep); }
@@ -490,8 +490,12 @@ button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visib
   .contact-panel-copy { padding: 54px 6vw 66px; }
   .contact-detail { margin-top: 55px; }
   .contact-form-column { padding: 55px 6vw 62px; }
+  .footer-grid { grid-template-columns: 1fr 1fr; gap: 35px; padding: 40px 0 45px; }
 }
 @media (max-width: 560px) {
+  .site-header { grid-template-columns: 1fr auto; padding: 13px 24px; gap: 14px; }
+  .brand-seal { display: none; }
+  .main-nav { gap: 12px; font-size: 9px; }
   .inner-page { padding-right: 24px; padding-left: 24px; }
   .page-hero { display: block; min-height: 0; padding: 70px 0 54px; }
   .page-hero-note { width: 100%; margin-top: 47px; }
@@ -507,14 +511,20 @@ button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visib
   .process-steps strong { margin-top: 16px; }
   .booking-footer-cta, .gallery-bottom { align-items: flex-start; flex-direction: column; }
   .art-gallery { display: flex; flex-direction: column; gap: 24px; margin-top: 58px; }
-  .art-gallery-card, .gallery-card-large, .gallery-card-tall, .gallery-card-wide { width: 92%; height: 390px; }
-  .gallery-card-tall, .gallery-card-wide { align-self: flex-end; }
-  .gallery-quote { width: 100%; }
+  .art-gallery-card, .gallery-card-large, .gallery-card-tall, .gallery-card-wide { width: 100%; height: auto; aspect-ratio: 4/5; }
+  .gallery-card-tall, .gallery-card-wide { align-self: flex-start; }
+  .gallery-quote { width: 100%; border-left: none; border-top: 2px solid var(--coral); padding: 20px 0 0; }
   .contact-panel-copy, .contact-form-column { padding-right: 24px; padding-left: 24px; }
   .contact-panel-copy h2 { font-size: clamp(3.8rem, 17vw, 5.5rem); }
+  .contact-detail { font-size: 16px; flex-wrap: wrap; word-break: break-all; margin-top: 45px; }
+  .contact-form-column .booking-form { max-width: 100%; }
   .room-grid { grid-template-columns: 1fr; }
   .room-card-featured { grid-row: auto; min-height: 390px; }
   .room-card { min-height: 230px; }
+  .site-footer { padding: 30px 24px; }
+  .footer-grid { grid-template-columns: 1fr; gap: 35px; padding: 35px 0; }
+  .footer-brand h2 { font-size: clamp(3rem, 12vw, 4.2rem); }
+  .footer-bottom { flex-direction: column; gap: 15px; align-items: flex-start; padding-top: 24px; }
 }
 
 /* Cool Editorial Annual direction: route-specific framing makes each destination feel authored while recurring verification markers keep the system coherent. */
