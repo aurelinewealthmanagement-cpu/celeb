@@ -549,3 +549,71 @@ button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visib
   .gallery-page .page-hero { margin-right: -24px; margin-left: -24px; padding-right: 24px; padding-left: 24px; }
   .gallery-page .gallery-lede { margin-top: 48px; }
 }
+
+.contact-channels {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-top: 48px;
+}
+.contact-channel-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 16px;
+  background: rgba(245, 247, 251, 0.05);
+  border: 1px solid rgba(245, 247, 251, 0.12);
+  border-radius: 4px;
+  color: var(--bone);
+  transition: all 0.2s var(--ease-out);
+  max-width: 380px;
+}
+.contact-channel-item:hover {
+  background: rgba(245, 247, 251, 0.1);
+  border-color: var(--coral);
+  transform: translateX(4px);
+}
+.contact-channel-item svg:first-child {
+  color: var(--coral);
+  flex-shrink: 0;
+}
+.contact-channel-item .channel-info {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.contact-channel-item .channel-title {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 19px;
+  font-weight: 600;
+  line-height: 1.1;
+  color: var(--coral-soft);
+}
+.contact-channel-item .channel-sub {
+  color: rgba(245, 247, 251, 0.55);
+  font-family: "Manrope", sans-serif;
+  font-size: 8px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-top: 2px;
+}
+.contact-channel-item .channel-arrow {
+  color: rgba(245, 247, 251, 0.4);
+  transition: transform 0.2s var(--ease-out), color 0.2s var(--ease-out);
+}
+.contact-channel-item:hover .channel-arrow {
+  color: var(--coral);
+  transform: translate(2px, -2px);
+}
+.about-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+  margin-top: 22px;
+}
+.about-socials {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}

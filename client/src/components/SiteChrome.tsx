@@ -1,5 +1,5 @@
 // Cool Editorial Annual direction: shared page chrome uses midnight navy, cobalt action, saffron markers, and mist-blue surfaces across every route.
-import { ArrowUpRight, Instagram, Mail, Menu, X } from "lucide-react";
+import { ArrowUpRight, Instagram, Mail, Menu, Send, X } from "lucide-react";
 import { useState, type ReactNode } from "react";
 import { Link } from "wouter";
 
@@ -11,9 +11,9 @@ export default function SiteChrome({ children }: { children: ReactNode }) {
     <div className="site-shell cool-shell">
       <a className="skip-link" href="#main-content">Skip to content</a>
       <header className="site-header">
-        <Link className="brand-lockup" href="/" onClick={closeMenu} aria-label="Kayla Jade Blueeyed home">
-          <span className="brand-seal"><span className="brand-seal-letters">KJB</span></span>
-          <span className="brand-name"><span>Kayla Jade</span><span>Blueeyed</span></span>
+        <Link className="brand-lockup" href="/" onClick={closeMenu} aria-label="Cherly Carr K Kaitlyn Krems home">
+          <span className="brand-seal"><span className="brand-seal-letters">CCK</span></span>
+          <span className="brand-name"><span>Cherly Carr K</span><span>Kaitlyn Krems</span></span>
         </Link>
         <nav id="primary-navigation" className={`main-nav ${menuOpen ? "is-open" : ""}`} aria-label="Primary navigation">
           <Link href="/about" onClick={closeMenu}>About</Link>
@@ -31,13 +31,18 @@ export default function SiteChrome({ children }: { children: ReactNode }) {
       </header>
       <main id="main-content">{children}</main>
       <footer className="site-footer">
-        <div className="footer-topline"><span className="footer-mark">KJB</span><span className="footer-intro">A clear place for the work.</span><Link className="footer-back" href="/">Back to home <ArrowUpRight size={14} /></Link></div>
+        <div className="footer-topline"><span className="footer-mark">CCK</span><span className="footer-intro">A clear place for the work.</span><Link className="footer-back" href="/">Back to home <ArrowUpRight size={14} /></Link></div>
         <div className="footer-grid">
           <div className="footer-brand"><h2>Make room<br /><em>for the good stuff.</em></h2><p>For select work, thoughtful rooms, and conversations worth keeping.</p></div>
           <div className="footer-column"><span className="footer-label">Explore</span><Link href="/about">About</Link><Link href="/bookings">Bookings</Link><Link href="/gallery">Gallery</Link></div>
-          <div className="footer-column"><span className="footer-label">Connect</span><a href="/contact">Contact <Mail size={13} /></a><a href="https://instagram.com" target="_blank" rel="noreferrer">Instagram <Instagram size={13} /></a></div>
+          <div className="footer-column">
+            <span className="footer-label">Connect</span>
+            <Link href="/contact">Contact <Mail size={13} /></Link>
+            <a href="https://t.me/Unseenk4it" target="_blank" rel="noreferrer">Telegram <Send size={13} /></a>
+            <a href="https://www.instagram.com/cheryldeoliveira?stkn=a3gxbWpta3k5ZGlr" target="_blank" rel="noreferrer">Instagram <Instagram size={13} /></a>
+          </div>
         </div>
-        <div className="footer-bottom"><span>© 2026 Kayla Jade Blueeyed</span><span>Made for clear yeses.</span></div>
+        <div className="footer-bottom"><span>© 2019 Cherly Carr K Kaitlyn Krems</span><span>Made for clear yeses.</span></div>
       </footer>
     </div>
   );

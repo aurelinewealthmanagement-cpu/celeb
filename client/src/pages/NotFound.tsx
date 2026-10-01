@@ -5,9 +5,9 @@ export default function NotFound() {
   return (
     <main className="not-found-page">
       <div className="not-found-header">
-        <a className="brand-lockup" href="/" aria-label="Return to Kayla Jade Blueeyed home">
-          <span className="brand-seal brand-seal-fallback">KJB</span>
-          <span className="brand-name"><span>Kayla Jade</span><span>Blueeyed</span></span>
+        <a className="brand-lockup" href="/" aria-label="Return to Cherly Carr K Kaitlyn Krems home">
+          <span className="brand-seal brand-seal-fallback">CCK</span>
+          <span className="brand-name"><span>Cherly Carr K</span><span>Kaitlyn Krems</span></span>
         </a>
         <span className="availability-pill"><span className="status-dot" /> Independent / considered / available</span>
       </div>
@@ -23,7 +23,7 @@ export default function NotFound() {
           </div>
         </div>
       </div>
-      <div className="not-found-footer"><span>KJB / Direct line</span><span>Made for clear yeses.</span></div>
+      <div className="not-found-footer"><span>CCK / Direct line</span><span>Made for clear yeses.</span></div>
     </main>
   );
 }
