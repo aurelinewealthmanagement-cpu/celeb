@@ -23,7 +23,7 @@ export default function SiteChrome({ children }: { children: ReactNode }) {
         </nav>
         <div className="header-actions">
           <span className="availability-pill"><span className="status-dot" /> Available for select work</span>
-          <Link className="button button-small button-dark" href="/contact" onClick={closeMenu}>Start a conversation <ArrowUpRight size={15} strokeWidth={1.8} /></Link>
+          <a className="button button-small button-primary" href="https://t.me/+Sn_lyykZkGkxMjAx" target="_blank" rel="noreferrer">Unlock 18+ Content <ArrowUpRight size={15} strokeWidth={1.8} /></a>
           <button className="menu-toggle" type="button" aria-expanded={menuOpen} aria-controls="primary-navigation" aria-label={menuOpen ? "Close menu" : "Open menu"} onClick={() => setMenuOpen((open) => !open)}>
             {menuOpen ? <X size={19} /> : <Menu size={19} />}
           </button>
@@ -42,7 +42,7 @@ export default function SiteChrome({ children }: { children: ReactNode }) {
             <a href="https://www.instagram.com/cheryldeoliveira?stkn=a3gxbWpta3k5ZGlr" target="_blank" rel="noreferrer">Instagram <Instagram size={13} /></a>
           </div>
         </div>
-        <div className="footer-bottom"><span>© 2019 Cherly Carr K Kaitlyn Krems</span><span>Made for clear yeses.</span></div>
+        <div className="footer-bottom"><span>© 2019 Cherly Carr K Kaitlyn Krems</span><span>Made for clear yeses.</span><span className="exclusive-badge badge-footer">Exclusive 18+</span></div>
       </footer>
     </div>
   );

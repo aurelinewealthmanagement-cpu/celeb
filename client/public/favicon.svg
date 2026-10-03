@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <!-- Deep Anthracite Background -->
+  <rect width="512" height="512" rx="120" fill="#0D0B0C" />
+  
+  <!-- Outer glowing red border -->
+  <rect width="460" height="460" x="26" y="26" rx="95" fill="none" stroke="#E11D48" stroke-width="6" opacity="0.5"/>
+  <rect width="440" height="440" x="36" y="36" rx="85" fill="none" stroke="#FB7185" stroke-width="2" opacity="0.3"/>
+  
+  <!-- CCK Letters -->
+  <text x="50%" y="52%" dominant-baseline="middle" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="170" font-weight="bold" fill="#E4DFE0" letter-spacing="6">CCK</text>
+  
+  <!-- Sexy red accent dot underneath -->
+  <circle cx="256" cy="365" r="14" fill="#FB7185" />
+</svg>
